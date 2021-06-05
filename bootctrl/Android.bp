@@ -1,0 +1,27 @@
+cc_library_shared {
+    name: "bootctrl.aw",
+    relative_install_path: "hw",
+    vendor: true,
+    stem: "bootctrl.default",
+    srcs: [
+        "bootctrl.cpp",
+        "bootinfo.cpp",
+    ],
+    header_libs: ["libhardware_headers"],
+
+    static_libs: [
+        "libbootloader_message_vendor",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "liblog",
+    ],
+    owner: "allwinner",
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+    ],
+
+}

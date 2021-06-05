@@ -1,0 +1,12 @@
+Commit information:
+mali-bifrost:fix the surface is abondon(app disconnect after the surfaceflinger)
+
+Build parameters:
+GPU_G31=y
+HWVER_R0P0=y
+ANDROID=y
+ANDROID_FUTURE=y
+ANDROID_GRALLOC_PATH=hardware/aw/gpu/mali-bifrost/gralloc/src
+
+MD5 Info:
+afe6d98f52af5787cf797300fdeb81de lib/libGLES_mali.so

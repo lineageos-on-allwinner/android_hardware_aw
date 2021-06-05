@@ -1,0 +1,8 @@
+service optee /vendor/bin/hw/tee_supplicant
+    class early_hal
+
+on post-fs-data
+    # mkdir for optee
+    mkdir /data/vendor/tee 0770 system system
+    restorecon_recursive /data/vendor/tee
+

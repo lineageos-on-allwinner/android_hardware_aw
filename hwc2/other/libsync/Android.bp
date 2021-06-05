@@ -1,0 +1,12 @@
+cc_defaults {
+    name: "libsync_aw_defaults",
+    srcs: ["sync.c"],
+    local_include_dirs: ["include"],
+    cflags: ["-Werror"],
+}
+
+cc_library {
+    name: "libsync_aw",
+    vendor: true,
+    defaults: ["libsync_aw_defaults"],
+}
