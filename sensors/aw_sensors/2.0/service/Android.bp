@@ -18,7 +18,6 @@ cc_binary {
         "libhidlbase",
         "libfmq",
         "libpower",
-        "libhidltransport",
         "android.hardware.sensors@2.0",
     ],
     static_libs: [

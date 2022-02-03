@@ -7,7 +7,6 @@ cc_library_shared {
     shared_libs: [
         "liblog",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "vendor.display.config@1.0",
     ],

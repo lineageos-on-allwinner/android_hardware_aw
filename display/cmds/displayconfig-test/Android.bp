@@ -36,7 +36,6 @@ cc_defaults {
         "liblog",
         "libbinder",
         "libhidlbase",
-        "libhidltransport",
         "vendor.display.config@1.0",
     ],
 }

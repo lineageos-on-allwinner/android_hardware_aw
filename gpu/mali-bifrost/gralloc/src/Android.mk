@@ -202,7 +202,7 @@ LOCAL_SHARED_LIBRARIES := libhardware liblog libcutils libion libsync libutils
 ifeq ($(shell expr $(GRALLOC_VERSION_MAJOR) \<= 1), 1)
     LOCAL_SHARED_LIBRARIES += libGLESv1_CM
 else ifeq ($(GRALLOC_VERSION_MAJOR), 2)
-    LOCAL_SHARED_LIBRARIES += libhidlbase libhidltransport
+    LOCAL_SHARED_LIBRARIES += libhidlbase
     ifeq ($(GRALLOC_MAPPER), 1)
         LOCAL_SHARED_LIBRARIES += android.hardware.graphics.mapper@2.0
         ifeq ($(HIDL_MAPPER_VERSION_SCALED), 210)
@@ -289,8 +289,7 @@ else ifeq ($(GRALLOC_VERSION_MAJOR), 2)
 
     LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := \
         android.hardware.graphics.allocator@2.0 \
-        libhidlbase \
-        libhidltransport
+        libhidlbase
 
     ifeq ($(HIDL_MAPPER_VERSION_SCALED), 200)
         LOCAL_EXPORT_SHARED_LIBRARY_HEADERS += android.hardware.graphics.mapper@2.0

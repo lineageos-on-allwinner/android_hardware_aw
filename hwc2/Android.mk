@@ -114,7 +114,6 @@ ifeq ($(ENABLE_VENDOR_SERVICE),true)
     LOCAL_SHARED_LIBRARIES += \
         libbinder \
         libhidlbase \
-        libhidltransport \
         libdisplayconfig \
         vendor.display.config@1.0 \
         vendor.display.config@1.0-impl

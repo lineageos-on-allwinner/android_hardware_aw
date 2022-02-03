@@ -46,7 +46,6 @@ cc_library_shared {
         "liblog",
         "libbinder",
         "libhidlbase",
-        "libhidltransport",
         "vendor.display.config@1.0",
         "vendor.display.config@1.0-impl",
     ],
